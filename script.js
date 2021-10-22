@@ -29,6 +29,10 @@ function addUser() {
     } else {
         alert("Bitte fülle beide Felder aus")
     }
+
+    // Empty the input fields
+    nameField.value = ""
+    ageField.value = ""
 }
 
 /**
@@ -36,6 +40,7 @@ function addUser() {
  */
 function renderUsers() {
     const list = document.getElementById("list") // the DOM's <ul> element
+    list.innerHTML = "" // Empty the list's content to avoid the same array being rendered multiple times
     users.forEach(user => { // Itterate through the array
         const li = document.createElement("li") // create a <li> element for each entry in the array
         li.innerText = `${user.name}, ${user.age}` // Add the values of the object's keys 'name' and 'age' to the inner Text of the created <li>

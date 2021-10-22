@@ -21,9 +21,9 @@ You can use this as the basis of your HTML:
 <body>
     <form action="" onsubmit="return false">
         <label for="input-name">Name:</label>
-        <input type="text" name="" id="input-name" required>
+        <input type="text" name="" id="input-name">
         <label for="input-age">Age:</label>
-        <input type="number" name="" id="input-age" required>
+        <input type="number" name="" id="input-age">
         <button id="btn-add">Add User</button>
     </form>
     <script src="script.js"></script>
